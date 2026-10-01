@@ -64,13 +64,7 @@ class Matrix:
                     scaled.append(tuple(x / scale for x in vec))
 
         return scaled
-
-
-
         
-
-
-
 a = Matrix(0, 0, 0, 0)
 b = Matrix(1, 0, 1, 0)
 c = Matrix(0, 1, 0, 1)
@@ -86,17 +80,33 @@ for i in range (len(eigenvalues_a)):
     print(f"Eigenvalue a: {eigenvalues_a[i]}")
 print("-----------------------------")
 for i in range(len(eigenvecs_a)):
-    print(f"Eigenvector a: {eigenvecs_a[i]}")
+    if eigenvecs_a[i] == "UNDEFINED MATRIX":
+        print(f"Eigenvector a: {eigenvecs_a[i]}")
+    else:
+        print(f"Eigenvector a: ({eigenvecs_a[i][0]}")
+        print(f"                {eigenvecs_a[i][1]})")
 print("-----------------------------")
 for i in range(len(eigenvalues_b)):
-    print(f"Eigenvalue b: {eigenvalues_b[i]}")
+        if eigenvecs_b[i] == "UNDEFINED MATRIX":
+            print(f"Eigenvector b: {eigenvecs_b[i]}")
+        else:
+            print(f"Eigenvector b: ({eigenvecs_b[i][0]}")
+            print(f"                {eigenvecs_b[i][1]})")
 print("-----------------------------")
 for i in range(len(eigenvecs_b)):
-    print(f"Eigenvector b: {eigenvecs_b[i]}")
+    if eigenvecs_b[i] == "UNDEFINED MATRIX":
+        print(f"Eigenvector b: {eigenvecs_b[i]}")
+    else:
+        print(f"Eigenvector b: ({eigenvecs_b[i][0]}")
+        print(f"                {eigenvecs_b[i][1]})")
 print("-----------------------------")
 for i in range(len(eigenvalues_c)):
     print(f"Eigenvalue c: {eigenvalues_c[i]}")
 print("-----------------------------")
 for i in range(len(eigenvecs_c)):
-    print(f"Eigenvector c: {eigenvecs_c[i]}")
+    if eigenvecs_c[i] == "UNDEFINED MATRIX":
+        print(f"Eigenvector c: {eigenvecs_c[i]}")
+    else:
+        print(f"Eigenvector c: ({eigenvecs_c[i][0]}")
+        print(f"                {eigenvecs_c[i][1]})")
 print("-----------------------------")
